@@ -85,6 +85,7 @@ function render() {
       <div class="post-header-r"></div>
     </div>
     <div class="post-img"><img src="${post["image"]}"></div>
+    <div class="post-bottom">
     <div class="post-btns">
       <div class="post-btns-l">
         <div class="icon post-btn-l">${icons[0]["image"]}</div>
@@ -99,7 +100,7 @@ function render() {
     <div  class="post-copy">${post["copy"]}</div>
     <div id="post-comments${i}" class="post-comments"></div>
     <div class="post-footer"><input class="comment-input" placeholder="Kommentieren..."></div>
-  </div>
+  </div></div>
     `;
     for (let j = 0; j < post["comments"].length; j++) {
       const comment = post["comments"][j];
